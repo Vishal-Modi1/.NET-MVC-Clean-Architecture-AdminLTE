@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/MyEhealth
+/MyEhealth.Domain/bin/Debug/net6.0
+/MyEhealth.Domain/obj/Debug/net6.0
+/MyEhealth.Domain/obj/MyEhealth.Domain.csproj.nuget.dgspec.json
+/MyEhealth.Domain/obj/MyEhealth.Domain.csproj.nuget.g.props
+/MyEhealth.Domain/obj/MyEhealth.Domain.csproj.nuget.g.targets
+/MyEhealth.Domain/obj/project.assets.json
+/MyEhealth.Domain/obj/project.nuget.cache
+/MyEhealth.Infrastructure/bin/Debug/net6.0
+/MyEhealth.Infrastructure/obj
+/MyEhealth.Web/bin/Debug/net6.0
+/MyEhealth.Web/obj
