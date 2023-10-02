@@ -14,3 +14,4 @@
 /MyEhealth.Infrastructure/obj
 /MyEhealth.Web/bin/Debug/net6.0
 /MyEhealth.Web/obj
+/MyEhealth.Domain/obj/Release/net6.0

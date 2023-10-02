@@ -5,16 +5,21 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Collections.Generic;
 using MyEhealth.Domain.Entities;
+using log4net.Core;
+using log4net;
+using System.Reflection;
 
 namespace MyEhealth.Infrastructure.Repositories
 {
     public class PatientRepository : IPatientRepository
     {
         private readonly IConfiguration _configuration;
+        private readonly ILog _logger = LogManager.GetLogger(MethodBase.GetCurrentMethod()?.DeclaringType);
 
         public PatientRepository(IConfiguration configuration)
         {
             _configuration = configuration;
+            //_logger = logger;
         }
 
         public void AddPatient(PatientModel patient)
@@ -101,6 +106,15 @@ namespace MyEhealth.Infrastructure.Repositories
 
         public List<PatientModel> GetAllPatient()
         {
+            try
+            {
+                _logger.Debug($"Starting {MethodBase.GetCurrentMethod()?.DeclaringType}");
+                throw new Exception("Sample Error inside the try catch block code");
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex.Message, ex.InnerException);
+            }
             try
             {
                 using (var con = new SqlConnection(getSqlConnection()))

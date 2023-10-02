@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEhealth.Web", "MyEhealth.Web\MyEhealth.Web.csproj", "{D4BEDBE5-F014-4A21-B1AD-359154390E93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyEhealth.Web", "MyEhealth.Web\MyEhealth.Web.csproj", "{D4BEDBE5-F014-4A21-B1AD-359154390E93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEhealth.Domain", "MyEhealth.Domain\MyEhealth.Domain.csproj", "{24C65A72-65C3-4FF1-BC29-631BBD6D4B84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyEhealth.Domain", "MyEhealth.Domain\MyEhealth.Domain.csproj", "{24C65A72-65C3-4FF1-BC29-631BBD6D4B84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEhealth.Infrastructure", "MyEhealth.Infrastructure\MyEhealth.Infrastructure.csproj", "{32CBF396-F1A1-4F55-946D-E2566469057E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyEhealth.Infrastructure", "MyEhealth.Infrastructure\MyEhealth.Infrastructure.csproj", "{32CBF396-F1A1-4F55-946D-E2566469057E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBScript", "DBScript", "{77D69CA4-04E3-45B9-A2E5-E98F170010B2}"
+	ProjectSection(SolutionItems) = preProject
+		1. DatabaseScript.sql = 1. DatabaseScript.sql
+		2. Log4net Table.sql = 2. Log4net Table.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
