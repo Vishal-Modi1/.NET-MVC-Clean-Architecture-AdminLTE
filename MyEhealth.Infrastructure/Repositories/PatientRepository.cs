@@ -8,6 +8,8 @@ using MyEhealth.Domain.Entities;
 using log4net.Core;
 using log4net;
 using System.Reflection;
+using log4net.Config;
+using System.IO;
 
 namespace MyEhealth.Infrastructure.Repositories
 {
