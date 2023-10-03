@@ -19,7 +19,6 @@ namespace MyEhealth.Infrastructure.Repositories
         public PatientRepository(IConfiguration configuration)
         {
             _configuration = configuration;
-            //_logger = logger;
         }
 
         public void AddPatient(PatientModel patient)
@@ -45,9 +44,9 @@ namespace MyEhealth.Infrastructure.Repositories
                     int i = cmd.ExecuteNonQuery();
                     con.Close();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    throw;
+                    _logger.Error(ex);
                 }
             }
         }
@@ -76,9 +75,9 @@ namespace MyEhealth.Infrastructure.Repositories
                     int i = cmd.ExecuteNonQuery();
                     con.Close();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    throw;
+                    _logger.Error(ex);
                 }
             }
         }
@@ -98,9 +97,9 @@ namespace MyEhealth.Infrastructure.Repositories
                     con.Close();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                _logger.Error(ex);
             }
         }
 
@@ -140,12 +139,14 @@ namespace MyEhealth.Infrastructure.Repositories
 
                         lst.Add(patient);
                     }
+
                     return lst;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                _logger.Error(ex);
+                throw ex;
             }
         }
 
@@ -178,10 +179,10 @@ namespace MyEhealth.Infrastructure.Repositories
                     return patient;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                _logger.Error(ex);
+                throw ex;
             }
         }
 
