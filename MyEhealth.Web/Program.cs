@@ -1,12 +1,5 @@
-using log4net;
-using log4net.Config;
 using MyEhealth.Domain.Interface;
 using MyEhealth.Infrastructure.Repositories;
-using System.Reflection;
-using log4net.Core;
-using log4net.Repository;
-using Microsoft.AspNetCore.Identity;
-using MyEhealth.Domain.Models;
 using MyEhealth.Web.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
