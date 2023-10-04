@@ -21,7 +21,7 @@ namespace MyEhealth.Infrastructure.Repositories
         public PatientRepository(IConfiguration configuration)
         {
             _configuration = configuration;
-        }
+        } 
 
         public void AddPatient(PatientModel patient)
         {
@@ -107,15 +107,6 @@ namespace MyEhealth.Infrastructure.Repositories
 
         public List<PatientModel> GetAllPatient()
         {
-            try
-            {
-                _logger.Debug($"Starting {MethodBase.GetCurrentMethod()?.DeclaringType}");
-                throw new Exception("Sample Error inside the try catch block code");
-            }
-            catch (Exception ex)
-            {
-                _logger.Error(ex.Message, ex.InnerException);
-            }
             try
             {
                 using (var con = new SqlConnection(getSqlConnection()))
