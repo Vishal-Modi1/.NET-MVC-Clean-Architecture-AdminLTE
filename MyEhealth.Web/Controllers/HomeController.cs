@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using MyEhealth.Domain.Models;
 using MyEhealth.Web.Models;
 using System.Diagnostics;
 

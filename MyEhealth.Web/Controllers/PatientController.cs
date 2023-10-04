@@ -25,7 +25,8 @@ namespace MyEhealth.Web.Controllers
         // GET: Patient/Create
         public ActionResult Create()
         {
-            return View();
+            PatientModel patientModel = new PatientModel();
+            return PartialView("Create", patientModel);
         }
 
         // POST: Patient/Create
@@ -48,7 +49,8 @@ namespace MyEhealth.Web.Controllers
         // GET: Patient/Edit/5
         public ActionResult Edit(int id)
         {
-            return View(_patientRepository.GetPatientById(id));
+            var patientData = _patientRepository.GetPatientById(id);
+            return PartialView("Edit", patientData);
         }
 
         // POST: PatientController/Edit/5

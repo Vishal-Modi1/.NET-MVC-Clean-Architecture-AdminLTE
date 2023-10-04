@@ -5,6 +5,9 @@ using MyEhealth.Infrastructure.Repositories;
 using System.Reflection;
 using log4net.Core;
 using log4net.Repository;
+using Microsoft.AspNetCore.Identity;
+using MyEhealth.Domain.Models;
+
 [assembly: log4net.Config.XmlConfigurator(ConfigFile = "log4net.config", Watch = true)]
 
 //[assembly: log4net.Config.XmlConfigurator(ConfigFile = "log4net.config", Watch = true)]
@@ -48,6 +51,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Account}/{action=Login}/{id?}");
 
 app.Run();
