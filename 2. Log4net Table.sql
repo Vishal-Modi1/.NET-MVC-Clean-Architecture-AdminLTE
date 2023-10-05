@@ -4,8 +4,7 @@ CREATE TABLE [dbo].[Log](
     [Thread] [varchar](255) NOT NULL,  
     [Level] [varchar](50) NOT NULL,  
     [Logger] [varchar](255) NOT NULL,  
-    [Message] [varchar](4000) NOT NULL,  
-    [Exception] [nvarchar](max) NULL
+    [Message] [varchar](4000) NOT NULL
  CONSTRAINT [PK_Log] PRIMARY KEY CLUSTERED   
 (  
     [Id] ASC  
